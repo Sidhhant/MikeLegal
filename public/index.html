@@ -89,6 +89,12 @@
           <span class="visible-xs navbar-brand">Sidebar menu</span>
         </div>
         <div class="navbar-collapse collapse sidebar-navbar-collapse">
+          <script type="text/javascript">
+            $(document).on('click', '.navbar-nav li', function() {
+              $(".navbar-nav li").removeClass("active");
+              $(this).addClass("active");
+            });
+          </script>
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Create Case</a></li>
             <li><a href="#">Sign Out</a></li>
