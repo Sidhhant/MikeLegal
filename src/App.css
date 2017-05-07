@@ -1,0 +1,227 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900";
+
+body {
+  background-image: url(./images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #3E363F;
+  font-family: "Lato", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.App {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Modal {
+  background: white;
+  border-radius: 2px;
+  padding: 20px;
+  width: 340px;
+}
+
+.Input {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: row-reverse;
+  border-bottom: 1px solid rgba(255, 252, 232, 0.1);
+  padding-bottom: 3px;
+  margin-bottom: 5px;
+ // border-bottom: 2px solid #ebebeb;
+}
+.Input input {
+  //outline: none;
+  //border: 0;
+  //color: #333;
+  //background: transparent;
+  //font-family: "Lato", sans-serif;
+  //flex: 1 0 auto;
+  //font-size: 14px;
+  //font-weight: 300;
+  width: 75%;
+    height: 50px;
+    display: block;
+    margin: 0 auto 15px;
+    padding: 0 15px;
+    border: none;
+    border-bottom: 2px solid #ebebeb;
+}
+.Input input:hover {
+  border-bottom-color: #dcdcdc;
+}
+
+.Input input:focus {
+    outline: none;
+    border-bottom-color: #3CC !important;
+}
+
+.Input input:focus ~ label {
+    outline: none;
+    border-bottom-color: #3CC !important;
+}
+.Input input[type='text'] ~ label::before {
+  content: "\f007";
+}
+.Input input[type='email'] ~ label::before {
+  content: "\f1fa";
+}
+.Input input[type='password'] ~ label::before {
+  content: "\f023";
+}
+.Input label {
+  font-family: FontAwesome;
+  font-size: 13px;
+  opacity: .1;
+  transition: opacity .5s ease;
+}
+.Input label::before {
+  align-items: center;
+  color: #FFFCE8;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 30px;
+}
+
+button {
+//  cursor: pointer;
+ // align-items: center;
+ // background: #337ee4;
+ // border: 0;
+ // border-radius: 3px;
+ // color: white;
+ // display: flex;
+ // font-family: "Lato", sans-serif;
+ // font-size: 13px;
+ // font-weight: 500;
+ // justify-content: center;
+ // margin-top: 20px;
+ // outline: none;
+ // padding: 10px 9px 10px 11px;
+ // text-transform: uppercase;
+ // width: 100%;
+    position: relative;
+    width: 75%;
+    height: 50px;
+    display: block;
+    margin: 30px auto 30px;
+    color: white;
+    background-color: rgb(51, 126, 228);
+    border: none;
+    -webkit-box-shadow: 0 5px 0 #2CADAD;
+    -moz-box-shadow: 0 5px 0 #2CADAD;
+    box-shadow: 0 5px 0 #2465bc;
+    font-family: 'Open Sans', sans-serif;
+}
+button .fa {
+  font-size: 12px;
+  margin-left: auto;
+  position: relative;
+  top: 1px;
+}
+button:hover {
+ // transform: scale(1.02);
+ top: 2px;
+    //-webkit-box-shadow: 0 3px 0 #2CADAD;
+    //-moz-box-shadow: 0 3px 0 #2CADAD;
+ box-shadow: 0 3px 0 #2465bc;
+}
+button:active {
+  transform: scale(0.99);
+}
+
+.example-enter {
+  margin-top: 30px;
+  opacity: .01;
+}
+.example-enter.example-enter-active {
+  margin-top: 0px;
+  opacity: 1;
+  transition: opacity .5s ease, margin .5s ease;
+}
+
+.example-leave {
+  margin-top: 0px;
+  opacity: 1;
+}
+.example-leave.example-leave-active {
+  margin-top: -30px;
+  opacity: .01;
+  transition: opacity .3s ease, margin .5s ease;
+}
+
+.text-vertical-center {
+  text-align: center;
+  vertical-align: middle;
+//  padding-top: 100px;
+}
+
+.SignUpHeading{
+    padding-bottom: 20px;
+    margin-top: 1px;
+    color: #525252;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px !important;
+}
+
+
+#noty-holder{
+  position: fixed;
+  top: 0px;
+  width:30%;
+}
+
+.close{ 
+  opacity: 1;
+  color: #fff;
+  font-size: 17px;
+  height: 0px;
+  margin: 0;
+  width: 35px;
+}
+
+.alert-info {
+    color: #ffffff;
+    background-color: #337ee4;
+    border-color: #337ee4;
+}
+
+.alert{
+  margin-bottom: 0px;
+}
+
+.alert.alert-info.alert-dismissable.page-alert{
+  margin-top: 26px;
+}
+
+.srBox{
+    width: 80%;
+    border: solid 1px #337ee4;
+    outline: none !important;
+    borderRadius: 0px;
+    fontSize: 16px;
+    backgroundColor: white;
+    backgroundImage: url("");
+    backgroundPosition: 10px 10px;
+    backgroundSize: 25px;
+    opacity: 1;
+    backgroundRepeat: no-repeat;
+    padding: 12px 20px 12px 50px;
+    color: #525252;
+    fontFamily: 'Open Sans', sans-serif;
+}
+
+.srBox:focus{
+    outline: none !important;
+    border-color: white;
+    box-shadow: 0 0 5px #337ee4;
+}
