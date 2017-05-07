@@ -36,11 +36,11 @@ var Results = React.createClass({
             		</div>
             		<div className="row" style={{}}>
             			<div className="col-md-8 col-md-offset-2" style={{marginTop:'30px'}}>
-            					<div className="card">
+            					<div className="card">   
                     		                <ul className="nav nav-tabs" role="tablist" >
-                            		            <li role="presentation" className="" style={{color:'#525252', fontFamily: '"Open Sans", sans-serif', fontSize:'21px'}}><a style={{textDecoration:'none'}} href="#case" aria-controls="cases"  role="tab" data-toggle="tab">Acts</a></li>
-                                    			<li role="presentation" className="active" style={{color:'#525252', fontFamily: '"Open Sans", sans-serif', fontSize:'21px'}}><a style={{textDecoration:'none'}} href="#case" aria-controls="cases"  role="tab" data-toggle="tab">Cases</a></li>
-                                    			<li role="presentation" className="" style={{color:'#525252', fontFamily: '"Open Sans", sans-serif', fontSize:'21px'}}><a style={{textDecoration:'none'}} href="#case" aria-controls="cases"  role="tab" data-toggle="tab">Rules</a></li>
+                            		            <li role="presentation" className="" style={{color:'#525252', fontFamily: '"Open Sans", sans-serif', fontSize:'21px'}}><a style={{textDecoration:'none', border:'0px'}} href="#case" aria-controls="cases"  role="tab" data-toggle="tab">Acts</a></li>
+                                    			<li role="presentation" className="active" style={{color:'#525252', fontFamily: '"Open Sans", sans-serif', fontSize:'21px'}}><a style={{textDecoration:'none', border:'0px'}} href="#case" aria-controls="cases"  role="tab" data-toggle="tab">Cases</a></li>
+                                    			<li role="presentation" className="" style={{color:'#525252', fontFamily: '"Open Sans", sans-serif', fontSize:'21px'}}><a style={{textDecoration:'none', border:'0px'}} href="#case" aria-controls="cases"  role="tab" data-toggle="tab">Rules</a></li>
                                     		</ul>
                                 </div>
                     	<div id="posts">

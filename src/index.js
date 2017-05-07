@@ -7,8 +7,12 @@ import ReactDOM from 'react-dom';
 import ResultsApp from './ResultsApp';
 import './index.css';
 //import './navbar.js'
-//import $ from "jquery";
-
+import $ from "jquery";
+ 
+$(document).on('click', '.navbar-nav li', function() {
+              $(".navbar-nav li").removeClass("active");
+              $(this).addClass("active");
+            });
 
 ReactDOM.render(
   <ResultsApp />,

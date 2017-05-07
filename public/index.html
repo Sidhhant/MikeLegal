@@ -66,44 +66,27 @@
 
 <div class="container">
 <div class="row">
-<button data-toggle="collapse" data-target="#demo" class="btn glyphicon glyphicon-tasks" style="background-color: white;
+<button  onclick="openNav()" style="background-color: white;
     width: 5%;
     box-shadow: none;
     float: left;
     position: fixed;
     top: -29px;
     left: 0px;
-    font-size: 27px;
+    font-size: 23px;
     height: 34px;
-    color: #5b95f5;"></button>
-  <div class="col-sm-3 collapse" style="position: fixed;top: 51px;left: 0px;z-index: 10; padding: 0px;" id="demo">
-    <div class="sidebar-nav">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <span class="visible-xs navbar-brand">Sidebar menu</span>
+    cursor:pointer;
+    color: #5b95f5;">&#9776;</button>
+        <div class="sidenav" id="mySidenav" style="color: #333;width: 0px;background-color: #fff;border: solid 2px #337ee4;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Create Case</a>
+            <a href="#">Workspace</a>
+            <a href="#">Sign Out</a>
+            <a href="#">Bare Acts</a>
+            <a href="#">Help</a>
         </div>
-        <div class="navbar-collapse collapse sidebar-navbar-collapse">
-          <script type="text/javascript">
-            $(document).on('click', '.navbar-nav li', function() {
-              $(".navbar-nav li").removeClass("active");
-              $(this).addClass("active");
-            });
-          </script>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Create Case</a></li>
-            <li><a href="#">Sign Out</a></li>
-            <li><a href="#">Bare Acts</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-  </div>
+      
+    
   <div class="col-sm-9">
   
   </div>
@@ -111,7 +94,15 @@
 </div>
  <div id="root"></div>
 
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
 
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
 
 
     
