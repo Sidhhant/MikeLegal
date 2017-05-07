@@ -50,6 +50,7 @@ li.active {
 }
 
 .heartImg{
+    background-image: url('./main.js');
     margin-top: 12px;
     width: 24px;
     height: 20px;

@@ -2,23 +2,7 @@ import React from 'react';
 import './App.css';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-
-var Input = React.createClass({
-	render: function() {
-		return (
-			<div className="Input">
-				<input 
-					id={this.props.name}
-					autoComplete="false"
-					required
-					type={this.props.type}
-					placeholder={this.props.placeholder}
-				/>	
-			</div>
-		);
-	}
-});
-
+import $ from "jquery";
 var p1 = {
 	marginTop:'68px',
 	color:'#525252',

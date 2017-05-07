@@ -1,3 +1,4 @@
+import $ from "jquery";
 
 function createNoty(message, type) {
     var html = '<div class="alert alert-' + type + ' alert-dismissable page-alert">';    
@@ -35,6 +36,7 @@ $(function(){
 });
 
 
+/*
 $(document).ready(function() {
     var win = $(window);
 
@@ -46,7 +48,7 @@ $(document).ready(function() {
 
             $.ajax({
                 url: '',
-                dataType: 'html',
+                dataType: '',
                 success: function(html) {
                     $('#posts').append(html);
                     $('#loading').hide();
@@ -54,4 +56,4 @@ $(document).ready(function() {
             });
         }
     });
-});
+}); */

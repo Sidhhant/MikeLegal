@@ -6,8 +6,8 @@ import ReactDOM from 'react-dom';
 //import CreateCaseApp from './CreateCaseApp';
 import ResultsApp from './ResultsApp';
 import './index.css';
-
-
+//import './navbar.js'
+//import $ from "jquery";
 
 
 ReactDOM.render(
